@@ -1,0 +1,249 @@
+{
+	"info": {
+		"_postman_id": "75703d8c-58c2-4f34-8964-d2e2736e8b51",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34183986"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/student?page=0&size=5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJjbyIsImlhdCI6MTc0NjU0ODUwMSwiZXhwIjoxNzQ2NjM0OTAxfQ.VlFaCqzGeNLKt_QNfREnd6N54eBJMO2yumYWt9FCWlG2IHsv2Hh5uY9L5jd-d7WFvfUrV9UqfffV02he-o1t0g",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJjbyIsImlhdCI6MTc0NjU0NDcxNiwiZXhwIjoxNzQ2NjMxMTE2fQ.VdEYa1JsvqvUUXJAfYOJKSqyFPvIRPrxtEOO_TL5vvJEnk7RL4E9Yjb3qHUBS9KkOiZs9j7Ao4gM_S_DtKLN4g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"marco\",\r\n    \"password\": \"mygoodpassword\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/student?page=0&size=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "0"
+						},
+						{
+							"key": "size",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/student/3",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJNYXR0aWEgTWFyaWFubyIsImlhdCI6MTc0NjYyODY0NCwiZXhwIjoxNzQ2NzE1MDQ0fQ.dkkkPP4PTkYRslfRS2dCD1EFpcypj2uPVdpAuRRg3fgPq-BAORGsSSdKhJXK7JXmN5MwesXYNt2LMRnhmsHcLQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/student/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Mattia Mariano\",\r\n  \"password\": \"mygoodpassword\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/student",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJNYXR0aWEgTWFyaWFubyIsImlhdCI6MTc0NjYyODY0NCwiZXhwIjoxNzQ2NzE1MDQ0fQ.dkkkPP4PTkYRslfRS2dCD1EFpcypj2uPVdpAuRRg3fgPq-BAORGsSSdKhJXK7JXmN5MwesXYNt2LMRnhmsHcLQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"id\": 5\r\n  },\r\n  \"enrollement\": null\r\n}\r\n\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/student",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/auth/signup",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJNYXR0aWEgTWFyaWFubyIsImlhdCI6MTc0NjcyNTA2NywiZXhwIjoxNzQ2ODExNDY3fQ.pOE0P05BPpQG6RvXsW3RDt2SYVwrIRzNE1pTbiHJVdeEO-kNJO7EGi7MbSHtp1ytPbleGVLaADoYogKXb7jI2Q",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"Elisabetta\",\r\n  \"email\": \"Elisabetta@example.com\",\r\n  \"password\": \"mygoodpassword\",\r\n  \"firstName\": \"Elisabetta\",\r\n  \"lastName\": \"Petraccia\",\r\n  \"birthDate\": \"2001-05-14\",\r\n  \"role\": [\"student\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/user/2",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJFbGlzYWJldHRhIiwiaWF0IjoxNzQ2NzI1NzczLCJleHAiOjE3NDY4MTIxNzN9.iUR_j8MLohi8Qb77buud-OzWiBPUXgpmyVJgUdi8yln77m823XTDZVpKi88MT7V1hqG7lV5k7uwjGH3UWi5n8A",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJtYXJjbyIsImlhdCI6MTc0NjU0NDcxNiwiZXhwIjoxNzQ2NjMxMTE2fQ.VdEYa1JsvqvUUXJAfYOJKSqyFPvIRPrxtEOO_TL5vvJEnk7RL4E9Yjb3qHUBS9KkOiZs9j7Ao4gM_S_DtKLN4g",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"marco\",\r\n    \"password\": \"mygoodpassword\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/user/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"user",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
